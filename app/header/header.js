@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import styles from './../../../styles/header.css'
+import styles from './../../styles/header.css'
 import { useMediaQuery } from 'react-responsive';
 
 

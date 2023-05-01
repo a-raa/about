@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import styles from './../../../styles/menu.css'
+import styles from './../../styles/menu.css'
 import { useMediaQuery } from 'react-responsive';
 
 export default function Menu() {

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import styles from './../../../styles/skills.css'
+import styles from './../../styles/skills.css'
 import { useMediaQuery } from 'react-responsive';
 
 export default function Skills() {

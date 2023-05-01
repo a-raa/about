@@ -1,6 +1,6 @@
 
 import './globals.css'
-import Header from '../pages/api/header/header'
+import Header from './header/header'
 import LayoutSub from './layoutSub'
 
 export const metadata = {
