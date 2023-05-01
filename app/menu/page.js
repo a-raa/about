@@ -4,22 +4,21 @@ import styles from './../../styles/menu.css'
 import { useMediaQuery } from 'react-responsive';
 
 export default function Menu() {
-    const isDesktopOrMobile = useMediaQuery({ query: '(max-width:1200px)' });
+    const isDesktopOrMobile = useMediaQuery({ query: '(max-width:1300px)' });
     return (
         <>
             {isDesktopOrMobile !== true ?
-                <div className="navMenu">
-                    <Link href="/about" className="linkTag">About<BoxBorder /></Link>
-                    <Link href="/skills" className="linkTag">Skills<BoxBorder /></Link>
-                    <Link href="/project" className="linkTag">Project<BoxBorder /></Link>
-                </div>
+                //1300 이상
+                <Content c='navMenu' />
                 :
-                <div className="navMenu mNavMenu">
-                    <Link href="/about" className="linkTag">About<BoxBorder /></Link>
-                    <Link href="/skills" className="linkTag">Skills<BoxBorder /></Link>
-                    <Link href="/project" className="linkTag">Project<BoxBorder /></Link>
-                </div>
+                <Content c='navMenu mNavMenu' />
             }
+
+            <div className="linkbtn">
+                <Link href="/">Main</Link>
+                <Link href="/../skills">Skills</Link>
+                <Link href="/../project">Project</Link>
+            </div>
 
         </>
 
@@ -35,4 +34,15 @@ function BoxBorder() {
             <span></span>
         </>
     )
+}
+
+function Content({ c }) {
+    return (
+        <div className={c}>
+            <Link href="/about" className="linkTag">About<BoxBorder /></Link>
+            <Link href="/skills" className="linkTag">Skills<BoxBorder /></Link>
+            <Link href="/project" className="linkTag">Project<BoxBorder /></Link>
+        </div>
+    )
+
 }

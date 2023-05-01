@@ -4,8 +4,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	width: 1000px; height: 450px;
-	margin:0 auto; margin-top:15%;
+	width: 70%; height: 60%;
+	margin:0 auto;
 	background-color: rgba(0, 0, 0, 0.2);
 	border:1px solid rgba(255, 255, 255, 0.5);
 	border-radius: 20px;
@@ -21,7 +21,8 @@
 	padding: 1% 1%;
 	font-size:2.0rem;
 	font-weight: bold;
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-top: 1px solid rgba(255, 255, 255, 0.5);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .skillImg {
@@ -70,18 +71,19 @@
 	animation-duration: 3.3s;	
 	-webkit-animation-duration: 3.3s;
 }
-
 /* 반응형 1300 */
 
-.mSkillsC {
-	width: 800px; height: 400px;
-	margin-top:20%;
+.skillsC h4 {
+	font-size:1.6rem;
 }
 
 /* 반응형 1000 */
 .mmSkillsC {
-	width: 80%; height:470px;
-	margin-top:30%;
+	width:80%;
+}
+
+.mmSkillsC h4 {
+	font-size:1.3rem;
 }
 
 

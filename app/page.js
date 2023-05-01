@@ -14,8 +14,8 @@ export default function Home() {
         <div className="content mainC">
           <div className="content_t">
             <div className="bestText">
-              <h2>어쩌구저쩌구</h2>
-              <h2>어쩌구저쩌구</h2>
+              <h2>dagdagadg</h2>
+              <h2>adgadgadgdag</h2>
             </div>
           </div>
         </div>
@@ -25,8 +25,8 @@ export default function Home() {
           <div className="content mainC tMainC">
             <div className="content_t">
               <div className="bestText">
-                <h2>어쩌구저쩌구</h2>
-                <h2>어쩌구저쩌구</h2>
+                <h2>adgdag</h2>
+                <h2>adgadg</h2>
               </div>
             </div>
           </div>
@@ -35,8 +35,8 @@ export default function Home() {
           <div className="content mainC mMainC">
             <div className="content_t">
               <div className="bestText">
-                <h2>어쩌구<br />저쩌구</h2>
-                <h2>어쩌구<br />저쩌구</h2>
+                <h2>dgdgadg<br />adgdagadg</h2>
+                <h2>adgadgadg<br />adgadg</h2>
               </div>
             </div>
           </div>
