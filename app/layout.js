@@ -1,7 +1,7 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css'
+import Header from '../pages/api/header/header'
+import LayoutSub from './layoutSub'
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +10,34 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body>
+        {/* 이전 버튼 */}
+        <LayoutSub />
+
+        {/* 배경 이미지 */}
+        <Background />
+
+        {/* header, main flex box */}
+        <div className='in'>
+          <Header />
+          <main>
+            {children}
+          </main>
+        </div>
+      </body>
     </html>
+  )
+}
+/* 배경 이미지 */
+function Background() {
+  return (
+    <div className="img">
+      <img src={process.env.PUBLIC_URL + './../img/img6.jpg'} alt="#" />
+      <span className="mask a"></span>
+      <span className="mask b"></span>
+      <span className="mask c"></span>
+      <span className="mask d"></span>
+    </div>
   )
 }

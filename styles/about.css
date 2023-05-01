@@ -1,0 +1,118 @@
+.about {
+    display:flex;
+    align-items: center;
+    width: 1000px; height: 450px;
+    background-color: rgb(255, 255, 255, 0.1);
+    margin:0 auto; margin-top:15%;
+    overflow: hidden;
+    border-radius: 70px;
+    border:1px solid rgb(255, 255, 255, 0.1);
+    padding:50px;
+}
+.imgC {
+    overflow: hidden;
+    width:50%; height:100%;
+    text-align: center;
+}
+
+
+.imgC img {
+    width:80%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+.textC {
+    width:50%; height:100%;
+    padding:3%;
+    background-color: rgba(9, 17, 46, 0.7);
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.textC h4 {
+    font-size:2.5rem;
+    margin-bottom:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.textC > p {
+    font-size:1.2rem;
+
+}
+
+/* 자기소개 */
+
+.intro {
+    padding:5px 7px 5px 0;
+    border-top:1px solid #eee;
+}
+
+.intro p {
+    font-size:1.0rem;
+    margin-bottom:7px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.aboutMe {
+    margin-top:10px;
+}
+
+
+/* 반응형 1300 */
+
+.mAboutC {
+    width: 800px; height: 400px;
+    margin-top:20%;
+    border-radius: 70px;
+}
+
+
+.mAboutC .textC h4 {
+    font-size:2.0rem;
+    margin-bottom:10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mAboutC .textC > p {
+    font-size:1.0rem;
+}
+
+
+.intro p {
+    font-size:0.9rem;
+}
+
+
+/* 반응형 모바일 1000 */
+
+
+.mmAboutC {
+    width: 80%; height:470px;
+    padding:1%;
+    border-radius: 0;
+    margin-top:30%;
+}
+
+.mmAboutC .imgC {
+    display:none;
+}
+
+.mmAboutC .textC {
+    padding:20px;
+    width:100%;
+}
+
+.mmAboutC .textC > p {
+    font-size:0.9rem;
+}
+
+
+
+
+
+

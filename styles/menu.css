@@ -1,0 +1,111 @@
+.navMenu {
+    width:50%; height:50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	animation: navShow 2s;
+    margin:0 auto; margin-top:10%;
+    border-radius: 20px;
+    background-color: rgba(180, 174, 174, 0.1);
+    border:1px solid white;
+}
+
+.navMenu a {
+    display:block;
+    width:40%;
+    font-size: 2.0rem;
+    margin:10px 0 10px 0;
+    background-color: rgba(9, 17, 46, 0.7);
+    padding:0 1%;
+    position: relative;
+    font-weight: bold;
+}
+
+.navMenu a span:nth-child(1) {
+    position: absolute;
+    border-top: 3px solid white;
+    top: 0;
+    left: 0;
+    right: 100%;
+    transition: 0.1s;
+    transition-delay: 0.3s
+
+}
+
+.navMenu a:hover span:nth-child(1) {
+    right:0%;
+    transition-delay: 0s;
+}
+
+.navMenu a span:nth-child(2) {
+    position: absolute;
+    border-right: 3px solid white;
+    top: 0;
+    right: 0;
+    bottom: 100%;
+    transition: 0.1s;
+    transition-delay: 0.2s;
+}
+
+.navMenu a:hover span:nth-child(2) {
+    bottom:0%;
+    transition-delay: 0.1s;
+}
+
+.navMenu a span:nth-child(3) {
+    position: absolute;
+    border-bottom: 3px solid white;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    transition: 0.1s;
+    transition-delay: 0.1s;
+}
+
+.navMenu a:hover span:nth-child(3) {
+    left:0%;
+    transition-delay: 0.2s;
+}
+
+.navMenu a span:nth-child(4) {
+    position: absolute;
+    border-left: 3px solid white;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    transition-delay: 0s;
+}
+
+.navMenu a:hover span:nth-child(4) {
+    top:0%;
+    transition-delay: 0.3s;
+}
+
+@keyframes navShow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 반응형 */
+.mNavMenu {
+    margin-top:20%;
+}
+
+
+.mNavMenu a {
+    display:block;
+    width:60%;
+    font-size: 1.5rem;
+    margin:5px 0 5px 0;
+    background-color: rgba(9, 17, 46, 0.7);
+    padding:0 1%;
+}
+
+
+

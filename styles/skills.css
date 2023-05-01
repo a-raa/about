@@ -1,0 +1,129 @@
+
+.skillsC {
+    display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 1000px; height: 450px;
+	margin:0 auto; margin-top:15%;
+	background-color: rgba(0, 0, 0, 0.2);
+	border:1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+}
+
+.skillsC .title {
+	width:100%; margin-bottom:20px;
+	text-align: center;
+}
+
+.skillsC h4 {
+	background-color: rgba(9, 17, 46, 0.7);
+	padding: 1% 1%;
+	font-size:2.0rem;
+	font-weight: bold;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.skillImg {
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.9);
+	padding:2%; width:100%;
+}
+
+.sImg {
+    width:70px;
+    margin-right:15px;
+
+    animation-name: skillfadeIn;
+	-webkit-animation-name: skillfadeIn;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+.sImg:nth-child(2) {
+	animation-duration: 1.8s;	
+	-webkit-animation-duration: 1.8s;
+}
+.sImg:nth-child(3) {
+	animation-duration: 2.1s;	
+	-webkit-animation-duration: 2.1s;
+}
+.sImg:nth-child(4) {
+	animation-duration: 2.4s;	
+	-webkit-animation-duration: 2.4s;
+}
+.sImg:nth-child(5) {
+	animation-duration: 2.7s;	
+	-webkit-animation-duration: 2.7s;
+}
+.sImg:nth-child(6) {
+	animation-duration: 3.0s;	
+	-webkit-animation-duration: 3.0s;
+}
+.sImg:nth-child(7) {
+	animation-duration: 3.3s;	
+	-webkit-animation-duration: 3.3s;
+}
+
+/* 반응형 1300 */
+
+.mSkillsC {
+	width: 800px; height: 400px;
+	margin-top:20%;
+}
+
+/* 반응형 1000 */
+.mmSkillsC {
+	width: 80%; height:470px;
+	margin-top:30%;
+}
+
+
+
+
+
+
+
+@keyframes skillfadeIn {
+	0% {
+		transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		transform: scale(1.1);	
+	}
+	80% {
+		transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+@-webkit-keyframes skillfadeIn {
+	0% {
+		-webkit-transform: scale(0);
+		opacity: 0.0;		
+	}
+	60% {
+		-webkit-transform: scale(1.1);
+	}
+	80% {
+		-webkit-transform: scale(0.9);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}		
+}
+
+
