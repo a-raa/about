@@ -6,26 +6,28 @@ import { useMediaQuery } from 'react-responsive';
 
 
 export default function LayoutSub() {
-    const router = useRouter();
+
 
     const isDesktopOrMobile = useMediaQuery({ query: '(max-width:1000px)' });
     return (
         <>
             {
-                
+
                 isDesktopOrMobile !== true ?
-                    <div className="navbtn">
-                        <button onClick={() => { router.back() }}>PREV</button>
-                        <button onClick={() => { router.push('/menu') }}>MENU</button>
-                    </div>
+                    <Content a='navbtn' />
                     :
-                    <div className="navbtn tNavbtn">
-                        <button onClick={() => { router.back() }}>PREV</button>
-                        <button onClick={() => { router.push('/menu') }}>MENU</button>
-                    </div>
+                    <Content a='navbtn tNavbtn' />
             }
         </>
     )
 }
 
-
+function Content({a}) {
+    const router = useRouter();
+    return (
+        <div className={a}>
+            <button onClick={() => { router.back() }}>PREV</button>
+            <button onClick={() => { router.push('/menu') }}>MENU</button>
+        </div>
+    )
+}

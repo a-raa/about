@@ -8,16 +8,16 @@ export default function Skills() {
     const isDesktopOrMobile2 = useMediaQuery({ query: '(max-width:1000px)' });
     return (
         <>
-        {isDesktopOrMobile !== true ?
-        //1300 이상
-        <Content c='content skillsC' />
-        :
-        isDesktopOrMobile2 !== true ?
-        //1000 이하
-        <Content c='content skillsC mSkillsC' />
-        :
-        <Content c='content skillsC mmSkillsC' />
-    }
+            {isDesktopOrMobile !== true ?
+                //1300 이상
+                <Content c='content skillsC' />
+                :
+                isDesktopOrMobile2 !== true ?
+                    //1000 이하
+                    <Content c='content skillsC mSkillsC' />
+                    :
+                    <Content c='content skillsC mmSkillsC' />
+            }
             <div className="linkbtn">
                 <Link href="/">Main</Link>
                 <Link href="/../about">About</Link>
@@ -29,7 +29,7 @@ export default function Skills() {
     )
 }
 
-function Content({c}) {
+function Content({ c }) {
     let item = ['html', 'css', 'javascript', 'typescript', 'react', 'nodejs', 'nextjs']
     return (
         <div className={c}>

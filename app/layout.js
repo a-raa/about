@@ -12,8 +12,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <body>
-        {/* 이전 버튼 */}
-        <LayoutSub />
 
         {/* 배경 이미지 */}
         <Background />

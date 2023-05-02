@@ -3,17 +3,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 1000px; height: 450px;
-    margin:0 auto; margin-top:15%;
+	width: 70%; height:500px;
 	background-color: rgba(0, 0, 0, 0.2);
 	border:1px solid rgba(255, 255, 255, 0.5);
     border-radius: 20px;
-	animation: navShow 2s;
+	animation: navShow 1s;
 }
 
 .navMenu a {
     display:block;
-    width:40%;
+    text-align: center;
+    width:60%;
     font-size: 2.0rem;
     margin:10px 0 10px 0;
     background-color: rgba(9, 17, 46, 0.7);
@@ -22,14 +22,37 @@
     font-weight: bold;
 }
 
+/* 반응형 1000 */
+
+.mmNavMenu {
+    width:90%;
+}
+
+.mmNavMenu a {
+    font-size:1.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* animation */
+
+
 .navMenu a span:nth-child(1) {
     position: absolute;
-    border-top: 3px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
     top: 0;
     left: 0;
     right: 100%;
     transition: 0.1s;
-    transition-delay: 0.3s
+    transition-delay: 0.1s
 
 }
 
@@ -40,12 +63,12 @@
 
 .navMenu a span:nth-child(2) {
     position: absolute;
-    border-right: 3px solid white;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
     top: 0;
     right: 0;
     bottom: 100%;
     transition: 0.1s;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s
 }
 
 .navMenu a:hover span:nth-child(2) {
@@ -55,7 +78,7 @@
 
 .navMenu a span:nth-child(3) {
     position: absolute;
-    border-bottom: 3px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     bottom: 0;
     left: 100%;
     right: 0;
@@ -65,12 +88,12 @@
 
 .navMenu a:hover span:nth-child(3) {
     left:0%;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s
 }
 
 .navMenu a span:nth-child(4) {
     position: absolute;
-    border-left: 3px solid white;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     top: 100%;
     left: 0;
     bottom: 0;
@@ -79,7 +102,7 @@
 
 .navMenu a:hover span:nth-child(4) {
     top:0%;
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
 }
 
 @keyframes navShow {
@@ -92,20 +115,7 @@
 }
 
 
-/* 반응형 */
-.mNavMenu {
-    margin-top:20%;
-}
 
-
-.mNavMenu a {
-    display:block;
-    width:60%;
-    font-size: 1.5rem;
-    margin:5px 0 5px 0;
-    background-color: rgba(9, 17, 46, 0.7);
-    padding:0 1%;
-}
 
 
 

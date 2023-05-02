@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 export default function About() {
     const isDesktopOrMobile = useMediaQuery({ query: '(max-width:1300px)' });
     const isDesktopOrMobile2 = useMediaQuery({ query: '(max-width:1000px)' });
-    const isDesktopOrMobile3 = useMediaQuery({ query: '(max-width:800px)' });
+    const isDesktopOrMobile3 = useMediaQuery({ query: '(max-width:900px)' });
 
     return (
         <>
@@ -22,7 +22,7 @@ export default function About() {
                 //1000 이상
                 <Content c='about mAboutC' />
                 :
-                //1000 이하
+                //900 이하
                 isDesktopOrMobile3 !== true ?
                 <Content c='about mAboutC mmAboutC' />
                 :
